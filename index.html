@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="authentication_div">
+        <form id="submit_authentication_input" action="#">
+            <h3>Authentication</h3>
+            <label for="Name">Name* : </label>
+            <input type="text" name="name" id="name_authentication_input" required/>
+            <label for="password">Password* : </label>
+            <input type="password" name="password" id="password_authentication_input" required/>
+            <input type="submit" value="Submit" />  
+        </form>
+    </div>
+
+    <div class="profil_div hide" >
+        <form id="submit_input" action="#">
+            <h3>Profile</h3>
+            <label for="Name">Name* : </label>
+            <input type="text" name="Name" id="name_input" required/>
+            <label for="Company name">Company name : </label>
+            <input type="text" name="Company_Name" id="company_name_input" />
+            <label for="Email address">Email address : </label>
+            <input type="text" name="Email" id="email_input" />
+            <label for="Phone number">Phone number : </label>
+            <input type="number" name="Phone" id="phone_input" />
+            <input type="submit" value="Change profil informations" />          
+        </form>
+    </div>
+
+    <div class="button_div hide">
+        <button name="add_card" id="add_button">Add new business card</button>
+        <div class="new_contact_div hide" >
+            <form id="submit_add_profil_input" action="#">
+                <h3>New contact</h3>
+                <label for="Name">Name* : </label>
+                <input type="text" name="Name" id="name_add_input" required/>
+                <label for="Company name">Company name : </label>
+                <input type="text" name="Company_Name" id="company_name_add_input" />
+                <label for="Email address">Email address : </label>
+                <input type="text" name="Email" id="email_add_input" />
+                <label for="Phone number">Phone number : </label>
+                <input type="number" name="Phone" id="phone_add_input" />
+                <input type="submit" value="Submit" />          
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="library_div hide">
+        
+        <h3>Library</h3>
+        <table id="contacts_table_input">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Company name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
 </body>
+<script src="assets/main.js"></script>
 </html>
