@@ -42,6 +42,8 @@ CREATE TABLE `contacts` (
 LOCK TABLES `contacts` WRITE;
 /*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
 INSERT INTO `contacts` VALUES (1,2,'contact_1','company_1','contact_1@o.fr',06000000);
+INSERT INTO `contacts` VALUES (2,2,'contact_1','company_1','contact_1@o.fr',06000000);
+INSERT INTO `contacts` VALUES (3,2,'contact_1','company_1','contact_1@o.fr',06000000);
 /*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
 UNLOCK TABLES;
 
